@@ -1,10 +1,10 @@
 <?php
-include("header.php");
-include("dbcon.php");
+include("./shared/header.php");
+include("./controllers/dbcon.php");
 ?>
 <div class="div-addStudents">
     <h2>All students</h2>
-    <button class="btn btn-primary"><a href="addStudent.php">Add students</a></button>
+    <button class="btn btn-primary"><a href="./addStudent.php">Add students</a></button>
 </div>
 
 <table class="table table-hover table-bordered table-striped">

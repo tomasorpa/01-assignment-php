@@ -1,5 +1,5 @@
 <?php
-include "header.php"
+include "./shared/header.php"
 ?>
 
 <section class="form">
@@ -7,7 +7,7 @@ include "header.php"
         <h2>Add students</h2>
         <button class="btn btn-primary"><a href="index.php">View Students</a></button>
     </div>
-    <form action="insert_data.php" method="post">
+    <form action="./controllers/insert_data.php" method="post">
         <div class="form-group">
             <label for="name" class="form-label">
                 First Name
@@ -30,8 +30,7 @@ include "header.php"
         <?php
         if (isset($_GET["message"])) {
             echo "<h6 class='errorMessage'> " . $_GET["message"] . "<h6/>";
-        }elseif
-        (isset($_GET["added_succesfully"])){
+        } elseif (isset($_GET["added_succesfully"])) {
             echo "<h6 class='successfulMessage'> " . $_GET["added_succesfully"] . "<h6/>";
         }
         ?>
